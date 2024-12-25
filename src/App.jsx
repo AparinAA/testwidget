@@ -15,13 +15,25 @@ function App() {
 				></iframe>
 			)}
 			<div className={styles.actionMenu}>
-				<button onClick={() => setShow("top")}>
+				<button
+					onClick={() =>
+						setShow((show) => (show === "top" ? "" : "top"))
+					}
+				>
 					Show widget on top
 				</button>
-				<button onClick={() => setShow("bottom")}>
+				<button
+					onClick={() =>
+						setShow((show) => (show === "bottom" ? "" : "bottom"))
+					}
+				>
 					Show widget on bottom
 				</button>
-				<button onClick={() => setShow("center")}>
+				<button
+					onClick={() =>
+						setShow((show) => (show === "center" ? "" : "center"))
+					}
+				>
 					Show widget on center
 				</button>
 			</div>
