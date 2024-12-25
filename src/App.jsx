@@ -8,7 +8,7 @@ function App() {
 		<div className={styles.main}>
 			{show && (
 				<iframe
-					src="http://109.248.175.199:10001"
+					src="https://www.aleksandraparin.site/"
 					className={styles.frameChat}
 				></iframe>
 			)}
